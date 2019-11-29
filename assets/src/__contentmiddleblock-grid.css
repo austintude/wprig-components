@@ -1,0 +1,45 @@
+
+@supports (grid-area:auto){
+	.contentMiddleBlock {
+		display: grid;
+		@media (--content-query) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			& .contentMiddleBlockTitle  {
+				grid-column: 2;
+				grid-row: 2;
+				z-index: 3;
+				font-size: 2.8rem;
+				text-shadow: 1px 1px #222;
+			}
+			& .contentMiddleBlockBackgroundImage  {
+				grid-column: 1 / span 3;
+				grid-row: 1 / span 8;
+				align-self: end;
+			}
+			& .contentMiddleBlockSubTitle {
+				grid-column: 2;
+				grid-row: 3;
+				z-index: 4;
+				font-size: 1.5rem;
+				font-weight: 300;
+    			text-shadow: 1px 1px #222;
+			}
+			& .contentMiddleBlockcontent {
+				grid-column: 2;
+				grid-row: 4 / span 4;
+				z-index: 10;
+				max-width: 30vw;
+				font-size: 1.1rem;
+    			background: rgba(0,0,0,.3);
+				padding: 1rem;
+				height: fit-content;
+				& p {
+					font-size: 1.1rem;
+					text-shadow: 1px 1px #222;
+				}
+			}
+
+		}
+	}
+}

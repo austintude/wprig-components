@@ -1,0 +1,53 @@
+.page-template-product-line.has-sidebar {
+	& .site-header {
+		margin-top: 4rem;
+	}
+	& .site {
+		grid-template-columns: 1fr;
+		background: rgba(0,0,0,.95);
+		& .site-main {
+			@media (--wide-menu-query) {
+		margin: auto;
+			}
+		}
+	}
+}
+.page-template-product-line {
+    & .galleryBlocks {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        grid-template-rows: repeat(2, 435px);
+        margin: 0 5vw;
+
+        & .galleryItem {
+
+            & .categoryTitle {
+                background: #fff;
+                padding: 1rem 0;
+
+                & h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    & #amp-lightbox-gallery {
+        font-size: 2rem;
+        margin-top: -3rem;
+    }
+
+    & main {
+        padding-top: 4rem;
+    }
+    @media (--narrow-portrait-menu-query) {
+        & .galleryBlocks {
+            margin: 0;
+        }
+        & #carouselHero,
+        & #carouselHero amp-img {
+            top: -4rem;
+        }
+    }
+}

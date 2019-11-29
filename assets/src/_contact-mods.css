@@ -1,0 +1,39 @@
+.page-template-contact.has-sidebar {
+	& .site-header {
+		margin-top: 4rem;
+	}
+	& .site {
+		grid-template-columns: 1fr;
+		& .site-main {
+			@media (--wide-menu-query) {
+		margin: auto;
+			}
+		}
+	}
+	& .contactBlock {
+		display: flex;
+		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: auto;
+		text-align: left;
+		width: 75vw;
+		text-transform:uppercase;
+		& a {
+			text-transform: none;
+		}
+		& button {
+			background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.8), rgba(0,0,0,1));
+			color: #fff;
+			text-transform: uppercase;
+			border-radius:.3rem;
+			font-size:1.1rem;
+			font-family: sans-serif;
+			padding: 1rem 3rem;
+		}
+		& div:nth-child(n) {
+			border-bottom: solid 1px #111;
+			padding-bottom: 2rem;
+		}
+	}
+}

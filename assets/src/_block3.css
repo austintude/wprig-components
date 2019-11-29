@@ -1,0 +1,23 @@
+.block3 {
+	display: flex;
+	flex-direction: column;
+	background: #ff9900;
+	margin: 0;
+	text-align: center;
+	padding: 2rem 0 3rem;
+	& button {
+		color: #282828!important;
+		border-color: rgba(0,0,0,0);
+		border-radius: 1px;
+		letter-spacing: 3px;
+		font-size: 16px;
+		font-family: 'Varela',Helvetica,Arial,Lucida,sans-serif!important;
+		font-weight: 700!important;
+		text-transform: uppercase!important;
+		background-image: linear-gradient(1deg,#fcc653 0%,#fcc653 100%)!important;
+		background-color: #fcd176;
+	}
+	& .contentMiddleBlock .contentMiddleBlockTitle {
+		font-size: 2rem;
+	}
+}

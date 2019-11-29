@@ -1,0 +1,7 @@
+
+@supports (grid-area:auto){
+	.contentMiddleBlock2 {
+		display: grid;
+
+	}
+}

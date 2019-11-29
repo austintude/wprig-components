@@ -1,0 +1,16 @@
+.page-template-blog.has-sidebar {
+	& .site-header {
+		margin-top: 4rem;
+	}
+	& .site {
+		grid-template-columns: 1fr;
+		& .site-main {
+			@media (--wide-menu-query) {
+		margin: auto 5vw;
+			}
+		& .wp-block-column {
+			padding: 2rem;
+		}
+		}
+	}
+}

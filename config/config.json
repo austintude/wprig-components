@@ -1,0 +1,16 @@
+{
+  "theme": {
+      "slug": "kitholmes",
+      "name": "Kit Holmes Inc",
+      "author": "Daniel Bisett",
+      "PHPNamespace": "WP_Rig\\WP_Rig"
+    },
+    "dev": {
+      "browserSync": {
+        "live": true,
+        "proxyURL": "kitholmes:8888",
+        "bypassPort": "8190",
+        "https": false
+      }
+}
+}

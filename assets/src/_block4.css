@@ -1,0 +1,13 @@
+.block4 {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	text-align: center;
+	background: rgba(0,0,0,.95);
+	padding: 2rem 0;
+	@media (--wide-menu-query) {
+		& amp-carousel {
+			margin: 0 10vw;
+		}
+	}
+}

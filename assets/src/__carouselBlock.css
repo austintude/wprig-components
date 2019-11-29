@@ -1,0 +1,9 @@
+.carousel-preview {
+	display: flex;
+	flex-direction: row;
+	padding-top: 1rem;
+	& img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

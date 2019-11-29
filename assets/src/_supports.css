@@ -1,0 +1,16 @@
+@import "__block1-grid.css";
+@import "__block2-grid.css";
+@import "__block3-grid.css";
+@import "__block4-grid.css";
+@import "__onethreewrapper-grid.css";
+@import "__contentmiddleblock-grid.css";
+@import "__contentmiddleblock2-grid.css";
+@import "__carouselBlock-grid.css";
+
+.footerGrid {
+	@media (--wide-menu-query) {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: .3rem;
+	}
+}

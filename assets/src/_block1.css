@@ -1,0 +1,24 @@
+.block1 {
+	display: flex;
+	flex-direction: column;
+	margin: -2rem 0 2rem;
+		text-align: center;
+	& button {
+		color: #282828!important;
+		border-color: rgba(0,0,0,0);
+		border-radius: 1px;
+		letter-spacing: 3px;
+		font-size: 16px;
+		font-family: 'Varela',Helvetica,Arial,Lucida,sans-serif!important;
+		font-weight: 700!important;
+		text-transform: uppercase!important;
+		background-image: linear-gradient(1deg,#fcc653 0%,#fcc653 100%)!important;
+		background-color: #fcd176;
+	}
+	& .ctaButton a {
+		background: transparent;
+		border-radius: 0;
+		padding: 0;
+		cursor: grab;
+	}
+}

@@ -1,0 +1,160 @@
+.custom-logo {
+    width: 6em;
+    top: .5em;
+    position: fixed;
+    left: .3em;
+    z-index: 16;
+}
+#mobileTopBar {
+    height: 5.55rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #f7f7f7;
+    z-index: 15;
+}
+.site-header {
+	margin-top: 4rem;
+}
+.primary-menu-container {
+    top: 1rem;
+    position: fixed;
+    z-index: 15;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    left: 0;
+}
+.titleTagWrapper {
+    position: relative;
+    margin-top: -8rem;
+    text-align: left;
+    width: 100vw;
+}
+body {
+	padding: 1em 0;
+}
+.site-branding {
+	padding-top: 0;
+	& .site-title {
+    font-size: 3rem;
+    width: 50%;
+    margin-left: 25%;
+	margin-right: auto;
+	color: #fff;
+	font-weight: 300;
+	text-shadow: 1px 1px #000;
+	font-size: 1.5rem;
+	}
+	& .tagline {
+    color: #fff;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+    font-weight: 300;
+    text-shadow: 1px 1px #000;
+	}
+}
+.nav--toggle-small .menu-toggle {
+    display: block;
+    margin: .5em auto;
+    padding: .6em 1.2em .5em;
+    font-size: 80%;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 0;
+	background: transparent;
+    position: fixed;
+    top: 0;
+    right: .6em;
+    z-index: 16;
+    display: block;
+}
+.main-navigation.nav--toggled-on {
+    top: 3em;
+    right: 0;
+    position: fixed;
+    background: hsla(0,0%,100%,.95);
+	z-index: 16;
+
+	& .primary-menu-container {
+		position: relative;
+		max-width: 60vw;
+		top: .5rem;
+	}
+}
+.main-navigation a {
+    display: block;
+    width: 100%;
+    padding: .5em 1em .5em 0;
+    text-decoration: none;
+    color: #131111;
+    color: var(--color-link-active);
+}
+.header-image {
+	margin: 4rem auto 0;
+	& amp-img img,
+	& img {
+	display: block;
+	margin: 0 auto;
+    min-width: 100vw;
+}
+}
+.ctaButton {
+
+	& a {
+		padding: 1rem 2rem;
+    background: #c3c3c3;
+	border-radius: 1rem;
+	color: #222;
+		text-decoration: none;
+	}
+	& a:hover {
+		color: #222;
+	}
+	& a:visited {
+		color: #222;
+	}
+}
+
+amp-lightbox {
+	background: rgba(0,0,0,.65);
+
+	& .lightbox {
+		background: rgba(0,0,0,.8);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 15vh;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& amp-youtube {
+			background: rgba(255, 255, 255, 0.9);
+		}
+	}
+	}
+	.primary-sidebar {
+		& a,
+		& a:hover,
+		& a:visited {
+		color: #222;
+	}
+	}
+
+.site-footer {
+	& .site-info {
+	color: rgba(0,0,0,.7);
+	font-size: .7rem;
+	& a,
+	& a:hover,
+	& a:visited {
+		text-decoration: none;
+		color: rgba(0,0,0,.4);
+	}
+}
+
+}
