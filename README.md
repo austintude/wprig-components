@@ -1,5 +1,5 @@
 <img align="right" width="90" height="90"
-     src="https://austintatiousdesign.co/svg/austintatious-design-new-banner.png"
+     src="https://austintatiousdesign.co/svg/AustintatiousDesign-logo-lrg.png"
      title="WP Rig logo by Morten Rand-Hendriksen">
      
 # wprig-components: WPRig Component pieces to aid in the quick build of future WPRig-ed themes
