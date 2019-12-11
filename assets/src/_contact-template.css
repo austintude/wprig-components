@@ -1,0 +1,22 @@
+.page-template-contact {
+
+    & #ctaBlock {
+        background: transparent;
+        & a {
+            text-decoration: none;
+            color: #fff;
+        }
+        & a:hover {
+            color: #fff;
+        }
+
+
+        & .contactForm {
+            display: grid;
+            justify-content: center;
+        }
+    }
+    @media (--narrow-portrait-menu-query) {
+
+    }
+}

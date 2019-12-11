@@ -1,0 +1,51 @@
+.page-template-portfolio {
+    & .galleryBlocks {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        grid-template-rows: repeat(2, 435px);
+        margin: 5rem 5vw;
+
+        & .galleryItem {
+
+            & .categoryTitle {
+                background: #fff;
+                padding: 2rem 0;
+
+                & h3 {
+                    text-align: center;
+                    padding: 0 1rem;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }           
+            }
+        }
+        & a {
+            color: #333;
+            text-decoration: none;
+        }
+        & .portfolioContent {
+            color:#fff;
+        }
+    }
+    
+    & #amp-lightbox-gallery {
+        font-size: 2rem;
+        margin-top: -3rem;
+    }
+    
+    & main {
+        padding-top: 4rem;
+    }
+    @media (--narrow-portrait-menu-query) {
+        & .galleryBlocks {
+            margin: 2rem 0;
+        grid-gap: 3rem;
+        }
+        & #carouselHero,
+        & #carouselHero amp-img {
+            top: -4rem;
+        }
+    }
+}

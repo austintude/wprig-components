@@ -1,0 +1,35 @@
+.aSide {
+	display: none;
+}
+aside#secondary {
+	font-size: .8rem;
+}
+@media (--content-query) {
+	.aSide {
+		display: grid;
+		grid-area: aSide;
+		box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .4);
+		position: sticky;
+		top: 7rem;
+		height: 100vh;
+		& ul {
+			margin: 0 1em 1.5em 1em;
+		}
+
+	& li {
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		list-style: none;
+		line-height: 2.5rem;
+
+		& a {
+			text-decoration: none;
+		}
+	}
+	& .asideBlock {
+		/* position: sticky;
+		top: 7rem; */
+	}
+}
+}

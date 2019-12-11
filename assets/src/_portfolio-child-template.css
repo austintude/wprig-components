@@ -1,0 +1,97 @@
+.page-template-portfolio-child {
+    & amp-carousel {
+    min-height: 55rem;
+        & amp-img {
+        cursor: pointer;
+    }
+}
+    & .main {
+        top: 0;
+        margin-top: -8rem;
+    }
+    & .galleryBlocks {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 80%;
+        height: 55rem;
+        
+    }
+        & .portfolioContent {
+            color:#fff;
+            margin: 2rem 0;
+            padding: 1rem 5vw;
+                position: relative;
+                background: rgba(0,0,0,.3);
+            & div {
+                padding: 2rem;
+            }
+            & p {
+                font-size: 1rem;
+            }
+        }
+    
+    & .site-footer {
+        & .topBlock {
+margin-bottom: 10rem;
+    }
+    & .baseBlock {
+        bottom: auto;
+        background: #000;
+    }
+}
+@media (--mobile-landscape-menu-query) {
+    & .galleryBlocks {
+        height: 17rem;
+    }
+    & #carouselHero,
+        & amp-carousel,
+        & .amp-carousel-slide,
+        & #carouselHero amp-img {
+            min-height: 25rem;
+            /* max-height: 55rem; */
+        }
+}
+    @media (--narrow-portrait-menu-query) {
+        & #carouselHero,
+        & amp-carousel,
+        & .amp-carousel-slide,
+        & #carouselHero amp-img {
+            min-height: 18rem;
+            /* max-height: 55rem; */
+        }
+        & #carouselHero amp-img {
+            min-height: 17rem;
+            max-height: 30rem;
+        }
+        & .galleryBlocks {
+            height: 17rem;
+            margin: 9rem 0 0;
+            width: 100%;
+        }
+            & .portfolioContent {
+                margin: 0;
+                padding-top: 1rem;
+                position: relative;
+                background: rgba(0,0,0,.3);
+                padding-bottom: 1rem;
+                & h3 {
+                    padding: 0;
+                }
+                & div {
+                    padding: 1rem;
+                }
+            }
+        
+        & .site-footer .baseBlock .builtBy {
+            height: 5rem;
+            margin-top: -1rem;
+            padding-top: 1rem;
+        }
+    }
+    @media (--large-desktop-query) {
+        & .galleryBlocks {
+            width: 100vw;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+	.sectionCardsBlock {
+	display: grid;
+	grid-gap: 1rem;
+	margin: auto 2vw auto auto;
+	width: 96vw;
+	& .sectionCard {
+		text-align: left;
+		font-weight: 300;
+		color: #4a4a4a;
+		background: #f9f7f7;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+		padding: 1rem;
+
+		& h3 {
+			font-size: 1.4rem;
+			font-weight: 300;
+
+		}
+
+		& p {
+			font-size: 1.1rem;
+		}
+	}
+	@media (--content-query) {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		margin: auto 5vw;
+		width: 65vw;
+	}
+}
+

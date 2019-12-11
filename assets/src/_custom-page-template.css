@@ -1,0 +1,91 @@
+.page-template-custom-page-template {
+	& .mobileiFrame {
+		@media (--content-query) {
+			display: none;
+		}
+	}
+	& .desktopiFrame {
+		display: none;
+		@media (--content-query) {
+			display: block;
+		}
+	}
+    & .site {
+        justify-content: flex-start;
+        grid-gap: 0;
+		/* color: #fff; */
+	}
+	& .titleTagWrapper {
+		margin-top: 0rem;
+	}
+	& .site-title {
+		font-size: 2.3rem;
+	}
+	& .tagline {
+		font-size: 1.45rem;
+	}
+    & main {
+        top: 0;
+        width: 80vw;
+        margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3rem;
+
+		& h2 {
+			font-size: 2rem;
+			font-weight: 400;
+			border-bottom: solid 2px #333;
+			width: fit-content;
+		}
+
+        & h3,
+        & h4 {
+				font-size: 1.5rem;
+				font-weight: 400;
+        }
+        & h4 {
+            font-size: 1.1rem;
+        }
+        & ul {
+            margin: 0 0 1.5em 0em;
+        }
+        & p {
+            padding: 0 2rem 0 0;
+            font-size: 1rem;
+        }
+    }
+    & .wp-block-image amp-img {
+        padding: 1rem 4rem;
+    }
+
+    @media (--narrow-portrait-menu-query) {
+        & #carouselHero,
+        & amp-carousel,
+        & .amp-carousel-slide,
+        & #carouselHero amp-img {
+            height: 17rem;
+        }
+        & .galleryBlocks {
+            margin: 9rem 0;
+            & .portfolioContent {
+                margin: 0rem 0vw;
+                & div {
+                    padding: 1rem;
+                }
+            }
+        }
+        & .site-footer .baseBlock .builtBy {
+            height: 5rem;
+            margin-top: -1rem;
+            padding-top: 1rem;
+        }
+	}
+	& header {
+		max-width: 100vw;
+		background-image: linear-gradient(90deg,#711EAF 0,#db00ca);
+		padding: 7rem 0;
+		color: #fff;
+		-webkit-clip-path: polygon(100% 100%,100% 0,-400% 0);
+		clip-path: polygon(100% 100%,100% 0,-400% 0);
+	}
+}
